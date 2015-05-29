@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hongyi Zhang - Homepage</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="icon" type="image/x-icon" href="./img/icons/h_icon_16.png">
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="bg" id="bg"></div>
+		<div id="toggleBlur">
+			<p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
+		</div>
+		<div class="center">
+			<div id="header">
+				<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
+					<div id="weather"></div>
+					<div id="weather2"></div>
+				</div>
+				<div class="top" id="title">
+					<p id ="titletext" class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">POMF 💨</p>
+				</div>
+			</div>
+			<form id="searchForm" method="post" autocomplete="off">
+				<fieldset>
+					<input id="searchBar" type="text" placeholder="Google Search" autofocus />
+					<input type="hidden" value="fubar" id="fubar" />
+					<input type="submit" value="Search" id="submitButton" />
+				</fieldset>
+			</form>
+			<blockquote>
+				<div id="resultsDiv"></div>
+			</blockquote>
+		
+			<div class="d1x1">
+				<h1 class="bracket">News</h1>				
+				<a href="http://news.yahoo.com/">Yahoo News</a> <br />
+				<a href="http://www.cnn.com/">CNN</a> <br />
+				<a href="http://ucrtoday.ucr.edu/">UCR News</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1><h1 class="bracket">Boards</h1></h1>
+				<a href="http://www.reddit.com/r/wallpaper+wallpapers">/r/ Wallpaper + Wallpapers</a> <br />
+				<a href="http://www.reddit.com/r/pics">/r/ pics</a> <br />
+				<a href="http://www.reddit.com/r/programming">/r/ programming</a> <br />
+				<a href="http://www.reddit.com/r/technology">/r/ technology</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Media</h1>
+				<a href="https://www.youtube.com/feed/subscriptions/">YouTube</a> <br />
+				<a href="http://www.soundcloud.com/">SoundCloud</a> <br />
+				<a href="http://www.twitch.tv/">Twitch</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">UCR</h1>
+				<a href="https://ilearn.ucr.edu/">ilearn</a> <br />
+				<a href="http://rweb.ucr.edu/">Rweb</a> <br/>
+				<a href="https://auth.ucr.edu/cas/login?SAMLRequest=fVLJTsMwEL0j8Q%2BW79mKkMBqggoIUYkloikHbsaZum4dO3jsFv4eNwUBB3p9fvOW8Ywv3jtNNuBQWVPSIs0pASNsq4ws6by5Sc7oRXV8NEbe6Z5Ngl%2BaJ3gLgJ7ESYNseChpcIZZjgqZ4R0g84LNJvd3bJTmrHfWW2E1JdPrkhplOq1WUq4BpBYrCaCkWndr0a%2F75VKYV7GKGpKS5%2B9Yo12sKWKAqUHPjY9QXpwm%2BWkyOm9GOStO2EnxQkn95XSpzL7BoVivexKy26apk%2Fpx1gwCG9WCe4jskkprpYZU2G5nX3NEtYnwgmsESiaI4HwMeGUNhg7cDNxGCZg%2F3ZV06X2PLMu22236I5PxLAiXQhsyLpBWw1rZ0Mz92ufh3Pzbl1Y%2FyuPsl1T19V27FtPr2molPshEa7u9csB9rOBdiA1urOu4%2F9%2BtSIsBUW2yGKgsGOxBqIWClpKs2rv%2BvYt4LZ8%3D&RelayState=https%3A%2F%2Fwww.google.com%2Fa%2Fucr.edu%2FServiceLogin%3Fservice%3Dmail%26passive%3Dtrue%26rm%3Dfalse%26continue%3Dhttps%253A%252F%252Fmail.google.com%252Fa%252Fucr.edu%252F%26ss%3D1%26ltmpl%3Ddefault%26ltmplcache%3D2%26emr%3D1%26osid%3D1">R-mail</a> <br />
+			</div>
+		
+			<div class="d1x1">
+				<h1 class="bracket">Web</h1>
+				<a href="http://www.xkcd.com/">xkcd</a> <br />
+				<a href="http://what-if.xkcd.com/">What If?</a> <br />
+				<a href="http://www.prequeladventure.com/">PREQUEL</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Mail</h1>
+				<a href="http://mail.google.com">G-mail</a> <br />
+				
+			</div>
+						
+			<div class="d1x1">
+				<h1 class="bracket">Hosting</h1>
+				<a href="http://dropbox.com">DropBox</a> <br />
+				<a href="http://imgur.com">Imgur</a> <br />
+				<a href="http://mega.nz">MEGA</a> <br />
+				<a href="http://mediafire.com">MediaFire</a> <br />
+				
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Misc</h1>
+				<a href="https://github.com/hzhan014">GitHub</a> <br />
+				<a href="http://translate.google.com/">Translate</a> <br />
+				<a href="http://sleepyti.me/">Sleepyti.me</a> <br />
+			</div>
+
+			<div class="d2x1" id="todo">
+				<h1 class="bracket" style="cursor: pointer;" onclick="saveTodo();">Reminders</h1>
+					<form method="post" action="">
+						<textarea id="todobox" name="comments">
+						</textarea>
+					</form>
+			</div>
+
+			<div class="d2x1">
+				[under development]
+			</div>
+			
+			
+						
+			<div class="d4x2">
+				[under development]
+			</div>
+			
+			
+		</div>
+
+		<div id="bottom-margin"></div>
+		
+		<script type="text/javascript">
+			// Randomize background
+			var date = new Date();
+			var hour = date.getHours();
+			if ( hour > 6 && hour < 18 ) {
+				var bgd = [ 'bgd1', 'bgd2', 'bgd3', 'bgd4', 'bgd5', 'bgd6', 'bgd7', 'bgd8', 'bgd9', 'bgd10', 'bgd11', 'bgd12', 'bgd12' ]
+				var bgd = bgd[Math.floor(Math.random() * bgd.length)];
+				document.querySelector('.bg').classList.add(bgd);
+			}
+			else {
+				var bgn = [ 'bgn1', 'bgn2', 'bgn3', 'bgn4', 'bgn5', 'bgn6', 'bgn7', 'bgn8', 'bgn9', 'bgn10', 'bgn11', 'bgn12', 'bgn13', 'bgn14', 'bgn15' ];
+				var bgn = bgn[Math.floor(Math.random() * bgn.length)];
+				document.querySelector('.bg').classList.add(bgn);
+			}
+			
+			// Use hours to modify the title text
+			if ( hour >= 3 && hour < 10 ) {
+				document.getElementById("titletext").innerHTML = "Good Morning!";
+			}
+			if ( hour >= 10 && hour < 18 ) {
+				document.getElementById("titletext").innerHTML = "Good Afternoon!";
+			}
+			if ( hour >= 18 || hour < 3 ) {
+				document.getElementById("titletext").innerHTML = "Good Evening!";
+			}
+			
+			// Generate Chrome tab color metatags.
+			
+			var colorBrightness;
+			if ( hour <= 11 ) {
+				colorBrightness = 91 + (hour/11)*127
+				blue = colorBrightness + 37;
+			} else
+			{
+				colorBrightness = 91 + (1-((hour-12)/11))*127
+				blue = colorBrightness + 37;
+			}
+			
+			var meta = document.createElement('meta');
+			meta.name = "theme-color";
+			meta.content = "rgb("+Math.round(colorBrightness-37) + "," + Math.round(colorBrightness) + "," + Math.round(blue) + ")";
+			document.getElementsByTagName('head')[0].appendChild(meta);
+		</script>
+		
+		<!--
+			Load some JS
+		-->
+				
+		<script src="js/jquery-1.7.min.js"></script>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/FeedEk.js"></script>
+		<script src="js/jquery.simpleWeather.min.js"></script>
+		<script src="js/scripts.js"></script>
+		
+		<!--
+			Search, need to unfuck
+		-->
+		<script src="js/script.js"></script>
+		<script src="js/start-search.js"></script>
+
+	</body>
+</html>
