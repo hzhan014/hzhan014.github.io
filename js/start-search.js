@@ -5,7 +5,7 @@ $(document).ready(function(){
 		searchSite	: false,
 		type		: 'web',
 		append		: false,
-		perPage		: 5,			// A maximum of 8 is allowed by Google
+		perPage		: 8,			// A maximum of 8 is allowed by Google
 		page		: 0				// The start page
 	}
 	
