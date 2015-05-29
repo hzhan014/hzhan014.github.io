@@ -78,11 +78,13 @@ h1 {
 .bgd11 { background-image: url(../img/backgrounds/day_rock.jpg) !important; }
 .bgd12 { background-image: url(../img/backgrounds/day_sheep.jpg) !important; }
 .bgd13 { background-image: url(../img/backgrounds/day_snow.jpg) !important; }
- 
+.bgd14 { background-image: url(../img/backgrounds/day_water.jpg) !important; }
+.bgd15 { background-image: url(../img/backgrounds/day_wheel.jpg) !important; }
+.bgd16 { background-image: url(../img/backgrounds/day_wolf.jpg) !important; }
 
-.bgn1 { background-image: url(../img/backgrounds/day_water.jpg) !important; } 
-.bgn2 { background-image: url(../img/backgrounds/day_wheel.jpg) !important; } 
-.bgn3 { background-image: url(../img/backgrounds/day_wolf.jpg) !important; } 
+.bgn1 { background-image: url(../img/backgrounds/night_me.jpg) !important; } 
+.bgn2 { background-image: url(../img/backgrounds/night_house.jpg) !important; } 
+.bgn3 { background-image: url(../img/backgrounds/night_me.jpg) !important; } 
 .bgn4 { background-image: url(../img/backgrounds/night_bird.jpg) !important; } 
 .bgn5 { background-image: url(../img/backgrounds/night_church.jpg) !important; } 
 .bgn6 { background-image: url(../img/backgrounds/night_colorful.jpg) !important; } 
