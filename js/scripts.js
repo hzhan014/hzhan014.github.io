@@ -136,7 +136,7 @@ function loadWeather() {
 	$.simpleWeather({
 		location: 'Thousand Oaks, CA',
 		woeid: '', 
-		unit: 'c',
+		unit: 'f',
 		success: function(weather) {
 			html = '<p>'+weather.city+'<br />';
 			html += weather.temp+'&deg;'+weather.units.temp+'<br />';
@@ -158,7 +158,7 @@ function loadWeather() {
 		$.simpleWeather({
 			location: location,
 			woeid: woeid,
-			unit: 'c',
+			unit: 'f',
 			success: function(weather) {
 				html = '<p>'+weather.city+'<br />';
 				html += weather.temp+'&deg;'+weather.units.temp+'<br />';
