@@ -158,7 +158,7 @@ function loadWeather() {
 		$.simpleWeather({
 			location: location,
 			woeid: woeid,
-			unit: 'f',
+			unit: 'c',
 			success: function(weather) {
 				html = '<p>'+weather.city+'<br />';
 				html += weather.temp+'&deg;'+weather.units.temp+'<br />';
