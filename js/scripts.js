@@ -134,7 +134,8 @@ function toggleVisibility(id1, id2) {
 // Only load weather on click
 function loadWeather() {
 	$.simpleWeather({
-		woeid: '2459370', 
+		location: 'Thousand Oaks, CA',
+		woeid: '', 
 		unit: 'c',
 		success: function(weather) {
 			html = '<p>'+weather.city+'<br />';
