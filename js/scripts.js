@@ -134,7 +134,7 @@ function toggleVisibility(id1, id2) {
 // Only load weather on click
 function loadWeather() {
 	$.simpleWeather({
-		woeid: '91320', 
+		woeid: '2459370', 
 		unit: 'c',
 		success: function(weather) {
 			html = '<p>'+weather.city+'<br />';
